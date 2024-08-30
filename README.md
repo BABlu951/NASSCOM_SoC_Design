@@ -1,9 +1,9 @@
 # NASSCOM_SoC_Design
 >***2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM***
 
-## DAY 1 - 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
+## Lab Session DAY 1 - 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
 
-OpenLANE is a completely automated RTL to GDSII flow that embeds open-source tools, namely, OpenROAD, Yosys, ABC, Magic, etc., apart from many custom methodology scripts for design exploration and optimization. Openlane is built around Skywater 130nm process node and can perform full ASIC implementation steps from RTL down to GDSII.
+OpenLANE is a completely automated RTL to GDSII flow that embeds open-source tools, namely, OpenROAD, Yosys, ABC, Magic, etc., apart from many custom methodology scripts for design exploration and optimization. Openlane is built around Skywater 130nm process node and can perform complete ASIC implementation steps from RTL down to GDSII.
 
 ### 'picorv32a' design synthesis using OpenLANE
 
@@ -11,7 +11,7 @@ OpenLANE is a completely automated RTL to GDSII flow that embeds open-source too
 ![Screenshot (767)](https://github.com/user-attachments/assets/47845d3b-aa36-4a18-8d42-6685cf648d7b)
 ![Screenshot (768)](https://github.com/user-attachments/assets/f230417b-c1e1-42b3-8dee-237c9f005927)
 
-### Calculate flop ratio
+### Calculate the flop ratio
 
 Calculation of Flop Ratio and DFF % from synthesis statistics report file
 
