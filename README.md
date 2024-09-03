@@ -74,5 +74,27 @@ run_floorplan
 ```
 
 Screenshot of floorplan run
+
 ![Screenshot (776)](https://github.com/user-attachments/assets/2148af66-0088-4cd8-a15c-8e0d0722dcce)
+
+2. Calculate the die area in microns from the values in floorplan def.
+   
+Screenshot of contents of floorplan.def
+
+![Screenshot (777)](https://github.com/user-attachments/assets/e1551b5a-5cd6-47ab-bfd0-727c6e505ba6)
+
+According to floorplan def
+
+$$ 1000\ unit\ distance=1 \mu m $$
+
+$$ Die\ width\ in\ unit\ distance\ =\ 600685-0=660685 $$
+
+$$ Die\ height\ in\ unit\ distance=671405-0=671405 $$
+
+$$ Distance\ (in\ microns\) =\ \frac{value\ in\ unit\ distance}{1000} $$
+
+$$ Die\ width\ (in\ microns\) =\ \frac{660685}{1000}=660.685 \mu m $$
+
+$$ Die\ height\ (in\ microns\) =\ \frac{671405}{1000}=6 \mu m $$
+
 
