@@ -93,8 +93,19 @@ $$ Die\ height\ in\ unit\ distance=671405-0=671405 $$
 
 $$ Distance\ (in\ microns\) =\ \frac{value\ in\ unit\ distance}{1000} $$
 
-$$ Die\ width\ (in\ microns\) =\ \frac{660685}{1000}=660.685 \mu m $$
+```
+# Change directory to path containing generated floorplan def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/31-08_20-57/results/floorplan/
 
-$$ Die\ height\ (in\ microns\) =\ \frac{671405}{1000}=6 \mu m $$
+# Command to load the floorplan def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+```
+Screenshots of floorplan.def in magic:
+
+![Screenshot (780)](https://github.com/user-attachments/assets/ae5070a0-a28c-4f8f-9912-f19e6bc52986)
+
+![Screenshot (826)](https://github.com/user-attachments/assets/ffd74d51-29a1-41cf-b55c-8ac380141160)
+![Screenshot (827)](https://github.com/user-attachments/assets/71a4f6ff-5519-482f-9cec-4dc9586a82c0)
 
 
