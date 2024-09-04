@@ -142,3 +142,107 @@ exit
 # Exit from OpenLANE flow docker sub-system
 exit
 ```
+## Lab Session 3 : Design library cell using Magic Layout and Ngspice characterization
+
+### Objectives
+Clone custom inverter standard cell design from github repository: Standard cell design and characterization using OpenLANE flow.
+Load the custom inverter layout in magic and explore.
+Spice extraction of inverter in magic.
+Editing the spice model file for analysis through simulation.
+Post-layout ngspice simulations.
+Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
+
+1. Clone custom inverter standard cell design from github repository
+```
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Clone the repository with custom inverter design
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+# Change into the repository directory
+cd vsdstdcelldesign
+
+# Copy magic tech file to the repo directory for easy access
+cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech 
+
+# Check contents to see whether everything is present
+ls
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+
+```
+Screenshot of commands run
+
+![Screenshot (839)](https://github.com/user-attachments/assets/d02dce99-f4fd-4294-b6eb-a28baa10eda1)
+
+2. Load the custom inverter layout in magic and explore
+
+Screenshot of custom inverter layout in magic
+
+![Screenshot (880)](https://github.com/user-attachments/assets/abf5cf6c-52f7-4369-9e8d-a155fc6e57b2)
+
+NMOS and PMOS identified
+
+![Screenshot (843)](https://github.com/user-attachments/assets/74b561cd-a615-4420-9daa-c6cf1737519d)
+![Screenshot (844)](https://github.com/user-attachments/assets/7115db06-185e-4442-8bfb-bf021a3710a2)
+
+Output Y connectivity to PMOS and NMOS drain verified
+
+![Screenshot (841)](https://github.com/user-attachments/assets/e5b14f85-8399-46a8-816b-4cb3845a7596)
+
+PMOS source connectivity to VDD (here VPWR) verified
+
+![Screenshot (845)](https://github.com/user-attachments/assets/cc71ba80-e9b1-48a4-b407-7924e94e6490)
+
+NMOS source connectivity to VSS (here VGND) verified
+
+![Screenshot (847)](https://github.com/user-attachments/assets/b47b2ec8-c08c-4978-bb05-2c8b29acbf8d)
+
+3. Spice extraction of inverter in magic.
+
+Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic
+
+```
+# Check the current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice, this command also enables the parasitic extraction
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+Screenshot of tkcon window after running above commands
+
+![Screenshot (849)](https://github.com/user-attachments/assets/a5827d26-7060-4085-9bce-c9fa9960a9aa)
+
+Final edited spice file ready for ngspice simulation
+
+![Screenshot (861)](https://github.com/user-attachments/assets/b63374a7-2322-47a2-bf89-93c621a2ec6b)
+
+5. Post-layout ngspice simulations.
+
+Commands for ngspice simulation
+
+```
+# Command to directly load spice file for simulation to ngspice
+ngspice sky130_inv.spice
+
+# Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot
+plot y vs time a
+```
+
+Screenshots of Ngspice run
+
+![Screenshot (860)](https://github.com/user-attachments/assets/e7cc4a50-1422-4c06-8760-e645ecfdde04)
+
+Screenshot of generated plot
+
+![Screenshot (862)](https://github.com/user-attachments/assets/ca4645e2-2714-4f01-ab93-fc35f1998c06)
+
+
