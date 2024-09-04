@@ -1,7 +1,7 @@
 # NASSCOM_SoC_Design
 >***2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM***
 
-## Lab Session DAY 1 - 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
+## Lab Session 1 : 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
 
 OpenLANE is a completely automated RTL to GDSII flow that embeds open-source tools, namely, OpenROAD, Yosys, ABC, Magic, etc., apart from many custom methodology scripts for design exploration and optimization. Openlane is built around Skywater 130nm process node and can perform complete ASIC implementation steps from RTL down to GDSII.
 
@@ -32,7 +32,7 @@ $$Flop\ Ratio = \frac{1613}{14876} =0.1084 $$
 
 $$Percentage\ of \ DFFs = 0.1084 \times 100 = 10.84%$$
 
-## Good floorplan vs bad floorplan and introduction to library cells 
+## Lab Session 2: Good floorplan vs bad floorplan and introduction to library cells 
 
 ### objective
 - Run 'picorv32a' design floorplan using OpenLANE flow and generate design output file.
@@ -135,3 +135,10 @@ Screenshots of placement run
 ![Screenshot (838)](https://github.com/user-attachments/assets/31090970-d5df-45f4-b246-f82d5d7d56df)
 
    
+```
+# Exit from OpenLANE flow
+exit
+
+# Exit from OpenLANE flow docker sub-system
+exit
+```
