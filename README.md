@@ -244,19 +244,53 @@ Screenshot of generated plot
 
 ![Screenshot (862)](https://github.com/user-attachments/assets/ca4645e2-2714-4f01-ab93-fc35f1998c06)
 
-Rise transition time calculation.
+**A.** Rise transition time calculation.
 
-$$ Rise\ time\ transition\ = Time\ taken\ for\ output\ to\ rise\ 80\%-Time\ taken\ for\ output\ to\ rise\ 20\% $$
+$` Rise\ time\ transition\ = Time\ taken\ for\ output\ to\ rise\ 80 \%-Time\ taken\ for\ output\ to\ rise\ 20 \% `$
 
-$$ 80\% of\ output = 2.64 V $$
+$` 80 \%\ of\ 3.3\ V = 2.64 V `$
 
-$$ 20\% of\ output = 660 mV $$
+$` 20 \%\ of\ 3.3\ V = 660 mV `$
 
 80% Screenshots
 ![Screenshot (865)](https://github.com/user-attachments/assets/e5c68bca-fc4a-4345-9bf6-8b4f8332f9c1)
 
-2% Screenshot
+20% Screenshot
 ![Screenshot (864)](https://github.com/user-attachments/assets/3e569367-645b-4ca8-911e-05142d85ce72)
 
 Fall transition time calculation
 ![Screenshot (866)](https://github.com/user-attachments/assets/5b609eee-6aee-4204-b389-1d811947a473)
+**Rise transition time is 63.75ps.**
+
+**B.** Fall transition time calculation.
+
+$` Fall\ time\ transition\ = Time\ taken\ for\ output\ to\ fall\ 20 \%-Time\ taken\ for\ output\ to\ fall\ 80 \% `$
+
+$` 80 \%\ of\ 3.3\ V = 2.64 V `$
+
+$` 20 \%\ of\ 3.3\ V = 660 mV `$
+
+
+20% Screenshot
+![Screenshot (872)](https://github.com/user-attachments/assets/ba71359e-cab3-4feb-8178-d94987af0c37)
+
+Fall transition time calculation
+![Screenshot (873)](https://github.com/user-attachments/assets/13bad28f-c386-4495-883b-2707ed59ad9a)
+**Fall transition time is 42.47ps.**
+
+**C.** Rise Cell Delay Calculation.
+
+$` Rise\ cell \ Delay\ = Time\ taken\ for\ output\ to\ reach\ 50 \%-Time\ taken\ for\ input\ to\ fall\ 50 \% `$
+
+$` 50 \%\ of\ 3.3\ V = 1.65 V `$
+
+
+50% Screenshot
+![Screenshot (874)](https://github.com/user-attachments/assets/c184fcf6-81f3-482e-80e8-be46678187d9)
+
+Rise Cell Delay calculation
+![Screenshot (875)](https://github.com/user-attachments/assets/8b60e90b-e555-4843-8249-9fa42f1a7bed)
+**Rise Cell Delay is 27.48ps.**
+
+
+
