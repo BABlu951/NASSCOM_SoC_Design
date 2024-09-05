@@ -225,9 +225,8 @@ Final edited spice file ready for ngspice simulation
 
 ![Screenshot (861)](https://github.com/user-attachments/assets/b63374a7-2322-47a2-bf89-93c621a2ec6b)
 
-5. Post-layout ngspice simulations.
-
-Commands for ngspice simulation
+5. <\code style = "color : red"> post-layout ngspice simulations. </code>
+Commands for Ngspice simulation
 
 ```
 # Command to directly load spice file for simulation to ngspice
@@ -245,4 +244,19 @@ Screenshot of generated plot
 
 ![Screenshot (862)](https://github.com/user-attachments/assets/ca4645e2-2714-4f01-ab93-fc35f1998c06)
 
+Rise transition time calculation.
 
+$$ Rise\ time\ transition\ = Time\ taken\ for\ output\ to\ rise\ 80\%-Time\ taken\ for\ output\ to\ rise\ 20\% $$
+
+$$ 80\% of\ output = 2.64 V $$
+
+$$ 20\% of\ output = 660 mV $$
+
+80% Screenshots
+![Screenshot (865)](https://github.com/user-attachments/assets/e5c68bca-fc4a-4345-9bf6-8b4f8332f9c1)
+
+2% Screenshot
+![Screenshot (864)](https://github.com/user-attachments/assets/3e569367-645b-4ca8-911e-05142d85ce72)
+
+Fall transition time calculation
+![Screenshot (866)](https://github.com/user-attachments/assets/5b609eee-6aee-4204-b389-1d811947a473)
