@@ -1,9 +1,10 @@
 # NASSCOM_SoC_Design
+### A Project on RISC-V Based Core Picorv32 Implementation and Characterization
 >***2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM***
 
 ![364647025-c84556e5-748c-469e-8376-b7bcfed1e3ff](https://github.com/user-attachments/assets/e6c2626d-9fdd-4354-a855-dd122460ecd1)
 
-##LEARNING THROUGH LABWORK :
+## LEARNING THROUGH LABWORK :
 
 - Engaged in a two-week intensive workshop on the complete Physical Design process from RTL to GDSII.
 - Gained hands-on experience with Google-SkyWater 130nm technology using open-source tools like Yosys, Magic, and NGSpice.
@@ -13,6 +14,11 @@
 
 ## TOOLS USED:
 ```Yosys Synthesis Suite``` ```OpenLANE RTL2GDS digital design suite``` ```NGSpice for characterization``` ```Magic and netgen for layout, floorplanning & physical verification``` ```OpenSTA for Static timing analysis``` ```TrironRoute for routing```
+### OS
+```linux```
+
+### Languages
+```TCL``` ```verilog``` ```bash```
 
 ## SKILLS GAINED:
 ```RISC-V core synthesis``` ```ASIC design flow``` ```CMOS transient analysis``` ```Layout and characterization``` ```Static timing analysis``` ```CTS``` ```Routing```
@@ -24,6 +30,8 @@ OpenLANE is a completely automated RTL to GDSII flow that embeds open-source too
 1. 'picorv32a' design synthesis using OpenLANE
 2. Calculate the flop ratio
 
+$$  $$
+   
 1. 'picorv32a' design synthesis using OpenLANE
    ![Screenshot (766)](https://github.com/user-attachments/assets/1256d4a0-2e27-455d-bad4-1a5bd55ba5b5)
    ![Screenshot (767)](https://github.com/user-attachments/assets/47845d3b-aa36-4a18-8d42-6685cf648d7b)
@@ -169,6 +177,8 @@ $$Die\ Area\ (in\ micron)=Die\ Width\ (in\ micron)\ *\ Die\ Height\ (in\ micron)
 3. Spice extraction of inverter in magic.
 4. Editing the spice model file for analysis through simulation.
 5. Post-layout ngspice simulations.
+
+$$ $$
 
 1. Clone custom inverter standard cell design from github repository
     ```
@@ -328,6 +338,8 @@ $$Die\ Area\ (in\ micron)=Die\ Width\ (in\ micron)\ *\ Die\ Height\ (in\ micron)
 11. Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts.
 12. Post-CTS OpenROAD timing analysis.
 13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.
+
+$$ $$
     
 1. **Fix up a minor DRC error and verify the design is ready to be inserted into our flow.**
     Conditions to be verified before moving forward with custom-designed cell layout:
@@ -933,6 +945,8 @@ $$Die\ Area\ (in\ micron)=Die\ Width\ (in\ micron)\ *\ Die\ Height\ (in\ micron)
 1. Perform generation of Power Distribution Network (PDN) and explore the PDN layout.
 2. Perfrom detailed routing using TritonRoute.
 3. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.
+
+$$ $$
 
 1. Perform generation of Power Distribution Network (PDN) and explore the PDN layout.
     Commands to perform all necessary stages up until now
