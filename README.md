@@ -12,10 +12,10 @@
 - Cloned a custom inverter standard cell design and ran the OpenLane flow to verify that it is accepted in the PnR flow.
 
 ## TOOLS USED:
-```Yosys Synthesis Suite``` ```OpenLANE RTL2GDS digital design suite``` ```NGSpice for characterization``` ```Magic for layout and floorplanning``` ```OpenSTA for Static timing analysis```
+```Yosys Synthesis Suite``` ```OpenLANE RTL2GDS digital design suite``` ```NGSpice for characterization``` ```Magic and netgen for layout, floorplanning & physical verification``` ```OpenSTA for Static timing analysis``` ```TrironRoute for routing```
 
 ## SKILLS GAINED:
-```RISC-V core synthesis``` ```ASIC design flow``` ```CMOS transient analysis``` ```Static timing analysis``` ```Layout and characterization```
+```RISC-V core synthesis``` ```ASIC design flow``` ```CMOS transient analysis``` ```Layout and characterization``` ```Static timing analysis``` ```CTS``` ```Routing```
 
 ## **Lab Session 1** : 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
 
