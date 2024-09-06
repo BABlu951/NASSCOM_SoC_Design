@@ -1,6 +1,22 @@
 # NASSCOM_SoC_Design
 >***2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM***
 
+![364647025-c84556e5-748c-469e-8376-b7bcfed1e3ff](https://github.com/user-attachments/assets/e6c2626d-9fdd-4354-a855-dd122460ecd1)
+
+##LEARNING THROUGH LABWORK :
+
+- Engaged in a two-week intensive workshop on the complete Physical Design process from RTL to GDSII.
+- Gained hands-on experience with Google-SkyWater 130nm technology using open-source tools like Yosys, Magic, and NGSpice.
+- Developed and characterized standard cells, contributing to generating a GDSII file for System-on-Chip (SoC) design.
+- Analyzed Post-Synthesis timing with the OpenSTA tool and fixed timing ECO to remove all violations(setup and hold time violations).
+- Cloned a custom inverter standard cell design and ran the OpenLane flow to verify that it is accepted in the PnR flow.
+
+## TOOLS USED:
+```Yosys Synthesis Suite``` ```OpenLANE RTL2GDS digital design suite``` ```NGSpice for characterization``` ```Magic for layout and floorplanning``` ```OpenSTA for Static timing analysis```
+
+## SKILLS GAINED:
+```RISC-V core synthesis``` ```ASIC design flow``` ```CMOS transient analysis``` ```Static timing analysis``` ```Layout and characterization```
+
 ## **Lab Session 1** : 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
 
 OpenLANE is a completely automated RTL to GDSII flow that embeds open-source tools, namely, OpenROAD, Yosys, ABC, Magic, etc., apart from many custom methodology scripts for design exploration and optimization. Openlane is built around Skywater 130nm process node and can perform complete ASIC implementation steps from RTL down to GDSII.
