@@ -1,17 +1,20 @@
 # NASSCOM_SoC_Design
 >***2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM***
 
-## Lab Session 1 : 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
+## **Lab Session 1** : 'picorv32a' design synthesis using OpenLANE flow and calculate flop ratio.
 
 OpenLANE is a completely automated RTL to GDSII flow that embeds open-source tools, namely, OpenROAD, Yosys, ABC, Magic, etc., apart from many custom methodology scripts for design exploration and optimization. Openlane is built around Skywater 130nm process node and can perform complete ASIC implementation steps from RTL down to GDSII.
+### Objectives
+1. 'picorv32a' design synthesis using OpenLANE
+2. Calculate the flop ratio
 
-### 'picorv32a' design synthesis using OpenLANE
+1. 'picorv32a' design synthesis using OpenLANE
 
 ![Screenshot (766)](https://github.com/user-attachments/assets/1256d4a0-2e27-455d-bad4-1a5bd55ba5b5)
 ![Screenshot (767)](https://github.com/user-attachments/assets/47845d3b-aa36-4a18-8d42-6685cf648d7b)
 ![Screenshot (768)](https://github.com/user-attachments/assets/f230417b-c1e1-42b3-8dee-237c9f005927)
 
-### Calculate the flop ratio
+2. Calculate the flop ratio
 
 Calculation of Flop Ratio and DFF % from synthesis statistics report file
 
@@ -32,14 +35,14 @@ $$Flop\ Ratio = \frac{1613}{14876} =0.1084 $$
 
 $$Percentage\ of \ DFFs = 0.1084 \times 100 = 10.84%$$
 
-## Lab Session 2: Good floorplan vs bad floorplan and introduction to library cells 
+## **Lab Session 2** : Good floorplan vs bad floorplan and introduction to library cells 
 
-### objective
-- Run 'picorv32a' design floorplan using OpenLANE flow and generate design output file.
-- Calculate the die area in microns from the values in floorplan.def.
-- Load generated floorplan.def in magic tool and explore the floorplan.
-- Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
-- Load generated placement def in magic tool and explore the placement.
+### Objective
+1. Run 'picorv32a' design floorplan using OpenLANE flow and generate design output file.
+2.  Calculate the die area in microns from the values in floorplan.def.
+3. Load generated floorplan.def in magic tool and explore the floorplan.
+4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+5. Load generated placement def in magic tool and explore the placement.
 
   The die area is a quantity property representing the total area of an integrated circuit die. This value is given by
 
@@ -142,15 +145,14 @@ exit
 # Exit from OpenLANE flow docker sub-system
 exit
 ```
-## Lab Session 3 : Design library cell using Magic Layout and Ngspice characterization
+## **Lab Session 3** : Design library cell using Magic Layout and Ngspice characterization
 
 ### Objectives
-Clone custom inverter standard cell design from github repository: Standard cell design and characterization using OpenLANE flow.
-Load the custom inverter layout in magic and explore.
-Spice extraction of inverter in magic.
-Editing the spice model file for analysis through simulation.
-Post-layout ngspice simulations.
-Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
+1. Clone custom inverter standard cell design from github repository: Standard cell design and characterization using OpenLANE flow.
+2. Load the custom inverter layout in magic and explore.
+3. Spice extraction of inverter in magic.
+4. Editing the spice model file for analysis through simulation.
+5. Post-layout ngspice simulations.
 
 1. Clone custom inverter standard cell design from github repository
 ```
@@ -220,6 +222,8 @@ ext2spice
 Screenshot of tkcon window after running above commands
 
 ![Screenshot (849)](https://github.com/user-attachments/assets/a5827d26-7060-4085-9bce-c9fa9960a9aa)
+
+4. Editing the spice model file for analysis through simulation.
 
 Final edited spice file ready for ngspice simulation
 
@@ -292,7 +296,7 @@ Rise Cell Delay calculation
 ![Screenshot (875)](https://github.com/user-attachments/assets/8b60e90b-e555-4843-8249-9fa42f1a7bed)
 **Rise Cell Delay is 27.48ps.**
 
-## LAB SESSION 4 : Pre-layout timing analysis and importance of good clock tree
+## **LAB SESSION 4** : Pre-layout timing analysis and importance of good clock tree
 ### Objectives
 
 1. Fix up minor DRC errors and verify the design is ready to be inserted into our flow.
@@ -906,7 +910,7 @@ Screenshots of commands run and timing report generated
 ![Screenshot (974)](https://github.com/user-attachments/assets/4df72eb7-ee1a-4802-8cf4-f2c6c4c37b51)
 ![Screenshot (977)](https://github.com/user-attachments/assets/1e3556b5-ad11-488b-aaad-8e5f54229a29)
 
-## Lab Session 5 - Final steps for RTL2GDS using tritonRoute and openSTA
+## **Lab Session 5** - Final steps for RTL2GDS using tritonRoute and openSTA
 
 ### Objectives
 1. Perform generation of Power Distribution Network (PDN) and explore the PDN layout.
