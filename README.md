@@ -1068,7 +1068,10 @@ $$Die\ Area\ (in\ micron)=Die\ Width\ (in\ micron)\ *\ Die\ Height\ (in\ micron)
     ![Screenshot (1001)](https://github.com/user-attachments/assets/2ab47804-3d7a-4971-856e-d4205e35ad8b)
     ![Screenshot (1002)](https://github.com/user-attachments/assets/b81e9595-22ac-42bb-9efd-336471330f7c)
 
-
+# Acknowledgements
+   *Kunal Ghosh*, Co-founder, VSD Corp. Pvt. Ltd.
+   *Nickson P Jose*, Physical Design Engineer, Intel Corporation.
+   *R. Timothy Edwards*, Senior Vice President of Analog and Design, efabless Corporation.
 
 
 
