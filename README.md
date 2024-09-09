@@ -177,6 +177,7 @@ $$Die\ Area\ (in\ micron)=Die\ Width\ (in\ micron)\ *\ Die\ Height\ (in\ micron)
 3. Spice extraction of inverter in magic.
 4. Editing the spice model file for analysis through simulation.
 5. Post-layout ngspice simulations.
+6. Find problem in the DRC section of the old magic tech file for the skywater process.
 
 $$ $$
 
@@ -321,6 +322,52 @@ $$ $$
     Rise Cell Delay calculation
     ![Screenshot (875)](https://github.com/user-attachments/assets/8b60e90b-e555-4843-8249-9fa42f1a7bed)
     **Rise Cell Delay is 27.48ps.**
+6. Find problem in the DRC section of the old magic tech file for the skywater process.
+
+   Link to Sky130 Periphery rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
+   
+   Commands to download and view the corrupted skywater process magic tech file and associated files to perform drc corrections
+   ```
+   # Change to home directory
+   cd
+   
+   # Command to download the lab files
+   wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+   
+   # Since lab file is compressed command to extract it
+   tar xfz drc_tests.tgz
+   
+   # Change directory into the lab folder
+   cd drc_tests
+   
+   # List all files and directories present in the current directory
+   ls -al
+   
+   # Command to view .magicrc file
+   gvim .magicrc
+   
+   # Command to open magic tool in better graphics
+   magic -d XR &
+   ```
+   Screenshots of commands run
+   ![Screenshot from 2024-09-09 19-39-31](https://github.com/user-attachments/assets/87d5405e-8cf1-4990-b124-a31aa2646541)
+   ![Screenshot from 2024-09-09 19-41-45](https://github.com/user-attachments/assets/b1c33117-ac65-4748-a84a-191945d05456)
+   Screenshot of .magicrc file
+   ![Screenshot from 2024-09-09 19-40-12](https://github.com/user-attachments/assets/5765ec18-2019-482a-b96e-eec7d7f13862)
+   **Incorrectly implemented poly.3 simple rule correction**
+   
+   Screenshot of poly rules
+   ![Screenshot from 2024-09-09 19-42-50](https://github.com/user-attachments/assets/102a7b55-080d-47ff-8c7c-83b527c92b7e)
+   Incorrectly implemented poly.3 rule no drc violation even though spacing < 0.48u
+   ![Screenshot from 2024-09-09 20-28-10](https://github.com/user-attachments/assets/db480096-c56d-4ace-b4b3-e63bb66d3a4d)
+
+   N-tap and P-tap DRC errror
+   ![Screenshot from 2024-09-09 20-02-03](https://github.com/user-attachments/assets/9eff747a-154b-4e09-8c00-c67b1ff2dfa6)
+   Vim sky130 tech file screenshot
+   ![Screenshot from 2024-09-09 20-06-43](https://github.com/user-attachments/assets/603a3788-787a-4831-93a3-c805a23e7f9f)
+
+
+   
 
 ## **LAB SESSION 4** : Pre-layout timing analysis and importance of good clock tree
 ### Objectives
